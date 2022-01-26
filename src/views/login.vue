@@ -87,8 +87,8 @@ export default {
       now = new Date(now); // Date object
 
       $.post({
-        //url: "http://35.189.221.84/dashboard-api/v1/auth/",
-        url: "https://app.test/api/phones",
+        //",
+        url: "",
         type: "POST",
         data: JSON.stringify(loginData),
         success: function (data) {
