@@ -1,46 +1,40 @@
-/* eslint-disable prettier/prettier */ /* eslint-disable prettier/prettier */
 <template>
-  <div class="l-login">
-    <h2>Login</h2>
-    <!-- <img alt="Vue logo" src="../assets/logo.png"  /> -->
-    <div class="l-form">
-      <form
-        v-on:submit.prevent="goToVerify()"
-        method="POST"
-        class="ui form padding-top-lg"
-      >
-        <div class="field">
-          <label>Phone Number</label>
-          <input
-            style="font-size: 16px !important"
-            class=""
-            type="text"
-            placeholder="Enter username"
-            v-model="username"
-            required
-          />
-        </div>
-        <div class="field">
-          <label>Password</label>
-          <input
-            style="font-size: 16px !important"
-            class=""
-            type="password"
-            placeholder="Enter password"
-            v-model="password"
-            required
-          />
-        </div>
-        <div class="field">
-          <button type="submit" class="ui button fluid bg-primary">
-            Login
-          </button>
-        </div>
-      </form>
-      <div v-if="alert_visible" class="ui positive message transition visible">
-        <i class="close icon"></i>
-        {{ alert_message }}
+  <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+  <div class="l-form">
+    <form
+      v-on:submit.prevent="goToVerify()"
+      method="POST"
+      class="ui form padding-top-lg"
+    >
+      <div class="field">
+        <label>Phone Number</label>
+        <input
+          style="font-size: 16px !important"
+          class=""
+          type="text"
+          placeholder="Enter username"
+          v-model="username"
+          required
+        />
       </div>
+      <div class="field">
+        <label>Password</label>
+        <input
+          style="font-size: 16px !important"
+          class=""
+          type="password"
+          placeholder="Enter password"
+          v-model="password"
+          required
+        />
+      </div>
+      <div class="field">
+        <button class="bg-cyan-500 hover:bg-cyan-600 ...">Login</button>
+      </div>
+    </form>
+    <div v-if="alert_visible" class="ui positive message transition visible">
+      <i class="close icon"></i>
+      {{ alert_message }}
     </div>
   </div>
 </template>
