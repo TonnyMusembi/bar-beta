@@ -1,5 +1,6 @@
 <template>
-  <img alt="Vue logo" src="../assets/logo.png" />
+  <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+  <button class="bg-green-500 ...">Login Page</button>
   <div class="l-form">
     <form
       v-on:submit.prevent="goToVerify()"

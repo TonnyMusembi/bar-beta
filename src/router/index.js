@@ -2,15 +2,16 @@
 import { createRouter, createWebHistory } from "vue-router";
 //import Home from "../views/Home.vue";
 import Login from '../views/login.vue'
+import Sidebar from '../components/Sidebar.vue'
 
 const routes = [{ path: '', name: 'login', component: Login },
-    // {
-    //     path: "/about",
-    //     name: "About",
 
-    //     component: () =>
-    //         import ( /* webpackChunkName: "about" */ "../views/About.vue"),
-    // },
+    {
+        path: '',
+        name: 'sidebar',
+        component: Sidebar
+    }, { path: '' }
+
 ];
 
 const router = createRouter({
