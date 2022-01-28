@@ -33,6 +33,16 @@
         <button class="bg-cyan-500 hover:bg-cyan-600 ...">Login</button>
       </div>
     </form>
+    <select
+      className="form-control "
+      onChange="{this.drugsChange.bind(this)}"
+      value="{this.state.drug_type}"
+    >
+      <option value="-1">Select Medication Class</option>
+      <option value="Medication Clause A">Medication Class A</option>
+      <option value="Medication Clause B">Medication Class B</option>
+      <option value="Medication Clause C" disabled>Medication Class C</option>
+    </select>
     <div v-if="alert_visible" class="ui positive message transition visible">
       <i class="close icon"></i>
       {{ alert_message }}
