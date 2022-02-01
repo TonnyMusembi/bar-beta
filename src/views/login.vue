@@ -1,6 +1,6 @@
 <template>
   <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-  <button class="bg-green-500 ...">Login Page</button>
+  <button class="bg-green-500 ...">Login Account</button>
   <div class="l-form">
     <form
       v-on:submit.prevent="goToVerify()"
@@ -38,7 +38,7 @@
       onChange="{this.drugsChange.bind(this)}"
       value="{this.state.drug_type}"
     >
-      <option value="-1">Select Medication Class</option>
+      <option value="-1" disa>Select Medication Class</option>
       <option value="Medication Clause A">Medication Class A</option>
       <option value="Medication Clause B">Medication Class B</option>
       <option value="Medication Clause C" disabled>Medication Class C</option>
