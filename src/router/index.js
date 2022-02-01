@@ -2,15 +2,20 @@
 import { createRouter, createWebHistory } from "vue-router";
 //import Home from "../views/Home.vue";
 import Login from '../views/login.vue'
-import Sidebar from '../components/Sidebar.vue'
+import Verify from '../views/verify.vue'
 
 const routes = [{ path: '', name: 'login', component: Login },
 
     {
-        path: '',
-        name: 'sidebar',
-        component: Sidebar
-    }
+        path: '/verify',
+        name: 'Verify',
+        component: Verify
+    },
+    // {
+    //     path: '/Sidebar',
+    //     component: () =>
+    //         import ( /* webpackChunkName: "Messages" */ '../components/Sidebar.vue')
+    // },
 ];
 
 const router = createRouter({

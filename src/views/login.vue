@@ -32,6 +32,9 @@
       <div class="field">
         <button class="bg-cyan-500 hover:bg-cyan-600 ...">Login</button>
       </div>
+      <div>
+        <router-link to="verify">Next</router-link>
+      </div>
     </form>
     <select
       className="form-control "
