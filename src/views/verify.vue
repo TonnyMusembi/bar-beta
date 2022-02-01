@@ -27,7 +27,23 @@
   </table>
 </template>
 <script>
+import axios from "axios";
 export default {
   setup() {},
+  methods: {
+    mounted() {
+      axios.get("https://app.test/api/vehicle").then((response) => {
+        console.log(response).catch((error) => {
+          console.log(error);
+        });
+      });
+    },
+    listItems() {
+      axios.get(""),
+        {
+          Headers,
+        };
+    },
+  },
 };
 </script>
