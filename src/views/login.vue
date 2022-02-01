@@ -93,8 +93,8 @@ export default {
 
       $.post({
         //",
-        url: "",
-        type: "POST",
+        url: "https://app.test/api/vehicle",
+        type: "GET",
         data: JSON.stringify(loginData),
         success: function (data) {
           vm.loading = [];
